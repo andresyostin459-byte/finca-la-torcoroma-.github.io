@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <link rel= "ICON" href="img/LOGO.ico">
+    <meta charset="utf-8">
+    <title>FINCA PARA ALQUILER</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                                            
+                  <a class="btn btn-outline-primary btn-square mr-2" href="#">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a class="btn btn-outline-success btn-square mr-2"
+   href="https://wa.me/573222261648" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<a class="btn btn-outline-danger btn-square mr-2"
+   href="https://www.instagram.com/tucuenta" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+                    <div class="d-inline-flex align-items-center">
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>3225599489</p>
+
+
+          </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">FINCA LA </span>TORCOROMA</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">INICIO</a>
+                        <a href="about.html" class="nav-item nav-link">MAS</a>
+                        <a href="service.html" class="nav-item nav-link active">CLIMA</a>
+                        <a href="package.html" class="nav-item nav-link"></a>
+                        <div class="nav-item dropdown">
+                   
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+.
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+           <div class="clima-card">
+    <div class="clima-header">
+        <span class="icono" id="iconoClima">⏳</span>
+        <h3>Clima en la zona</h3>
+    </div>
+
+    <div class="clima-body">
+        <p class="ubicacion">
+            📍 Cjón. La Campana #217<br>
+            El Silencio, Palmira – Valle del Cauca
+        </p>
+
+        <div class="datos">
+            <div class="dato">
+                <span class="valor" id="temp">--°C</span>
+                <span class="label">Temperatura actual</span>
+            </div>
+
+            <div class="dato">
+                <span class="valor" id="estado">Cargando…</span>
+                <span class="label">Estado del clima</span>
+            </div>
+
+            <div class="dato">
+                <span class="valor" id="viento">-- km/h</span>
+                <span class="label">Viento</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.clima-card{
+    max-width:420px;
+    margin:40px auto;
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    font-family:'Segoe UI', Arial, sans-serif;
+    overflow:hidden;
+}
+
+.clima-header{
+    background:linear-gradient(135deg,#198754,#2ecc71);
+    color:#fff;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.icono{
+    font-size:30px;
+}
+
+.clima-body{
+    padding:20px;
+    text-align:center;
+}
+
+.ubicacion{
+    font-size:14px;
+    color:#555;
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+.datos{
+    display:grid;
+    gap:14px;
+}
+
+.dato{
+    background:#f2f4f7;
+    border-radius:14px;
+    padding:14px;
+}
+
+.valor{
+    display:block;
+    font-size:22px;
+    font-weight:700;
+    color:#198754;
+}
+
+.label{
+    font-size:13px;
+    color:#555;
+}
+</style>
+
+<script>
+async function cargarClima(){
+    const url = "https://api.open-meteo.com/v1/forecast?latitude=3.5394&longitude=-76.3036&current_weather=true";
+
+    const res = await fetch(url);
+    const data = await res.json();
+    const clima = data.current_weather;
+
+    const temp = clima.temperature;
+    const viento = clima.windspeed;
+    const codigo = clima.weathercode;
+
+    let estado = "Clima agradable";
+    let icono = "🌤️";
+
+    if(codigo === 0){ estado="Despejado"; icono="☀️"; }
+    else if(codigo <= 3){ estado="Parcialmente nublado"; icono="⛅"; }
+    else if(codigo <= 48){ estado="Nublado"; icono="☁️"; }
+    else if(codigo <= 67){ estado="Lluvia"; icono="🌧️"; }
+    else if(codigo >= 80){ estado="Lluvias fuertes"; icono="⛈️"; }
+
+    document.getElementById("temp").innerText = temp + "°C";
+    document.getElementById("estado").innerText = estado;
+    document.getElementById("viento").innerText = viento + " km/h";
+    document.getElementById("iconoClima").innerText = icono;
+}
+
+cargarClima();
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header End -->
+
+
+    <!-- Booking Start -->
+    <!-- Team End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TORCO</span>ROMA</h1>
+                </a>
+                <p>✨ Tu lugar ideal para descansar y celebrar. ✨</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="cont: 5px;"></h6>
+                <div class="d-flex justify-content-start">
+                   
+                  <a class="btn btn-outline-primary btn-square mr-2" href="#">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a class="btn btn-outline-success btn-square mr-2"
+   href="https://wa.me/573225599489" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<a class="btn btn-outline-danger btn-square mr-2"
+   href="https://www.instagram.com/tucuenta" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;"></h5>
+                <div class="d-flex flex-column justify-content-start">
+                       
+                       
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">ubicacion</h5>
+                <div class="d-flex flex-column justify-content-start">
+               <p><i class="fa fa-envelope mr-2"></i>finca la torcoroma  Callejón. La Campana #217, El Silencio, Palmira, Valle del Cauca</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contactanos</h5>
+              
+                <p><i class="fa fa-phone-alt mr-2"></i>+57 3225599489</p>
+                <p><i class="fa fa-envelope mr-2"></i>fincalatorcoroma18@gmail.com   </p>
+              <!-- Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+.btn-compartir {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-compartir:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+</style>
+
+<button class="btn-compartir" onclick="compartir()">
+    <i class="fa-solid fa-share-nodes"></i>
+    Compartir
+</button>
+
+<script>
+function compartir() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Finca en Alquiler',
+            text: 'Mira esta finca espectacular para descansar y compartir momentos inolvidables 🌿✨',
+            url: window.location.href
+        });
+    } else {
+        alert('Tu navegador no permite compartir automáticamente. Copia el enlace.');
+    }
+}
+</script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50"> &copy; <a href="#"></a></a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50"> <a href="https://htmlcodex.com"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
